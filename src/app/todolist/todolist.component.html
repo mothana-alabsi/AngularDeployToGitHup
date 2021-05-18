@@ -1,0 +1,8 @@
+<h1>To do list</h1>
+<input class="form-control" #itemsInput (keyup.enter)='addItem(itemsInput)'>
+<div class="container-fluid p-0">
+<div class="list-group" *ngIf="items">
+ <button  @slides class="list-group-item" *ngFor="let item of items"
+    (click)="removeItem(item)">{{item}}</button>
+</div>
+</div>

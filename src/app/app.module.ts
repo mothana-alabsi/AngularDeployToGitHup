@@ -16,7 +16,9 @@ import { appRoutes } from './routes';
 import { AdminOrderComponent } from './admin/admin-order/admin-order.component';
 import { AdminProductsComponent } from './admin/admin-products/admin-products.component';
 import { NgbAlertModule, NgbModule, NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { AnimationcssComponent } from './animationcss/animationcss.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TodolistComponent } from './todolist/todolist.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,10 @@ import { NgbAlertModule, NgbModule, NgbPaginationModule } from '@ng-bootstrap/ng
       ProductsComponent,
       MyOrdersComponent,
       AdminOrderComponent,
-      AdminProductsComponent
+      AdminProductsComponent,
+      AnimationcssComponent,
+      TodolistComponent
+     
    ],
   imports: [
     BrowserModule,
@@ -39,6 +44,7 @@ import { NgbAlertModule, NgbModule, NgbPaginationModule } from '@ng-bootstrap/ng
     HttpModule,
     RouterModule.forRoot(appRoutes),
     NgbModule,
+    BrowserAnimationsModule
 
   ],
   providers: [AuthService],

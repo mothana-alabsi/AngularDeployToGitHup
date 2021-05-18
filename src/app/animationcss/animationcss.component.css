@@ -1,0 +1,15 @@
+div{
+  width:120px;
+  height:120px;
+  background-color: aquamarine;
+  animation-name: colorChang;
+  animation-duration: 5s;
+}
+@keyframes colorChang {
+  0% {background-color:blue};
+ 25% {background-color:brown};
+ 50% {background-color:rgb(0, 255, 149)};
+ 75% {background-color:rgb(255, 8, 0)};
+ 100% {background-color:rgb(255, 0, 234)};
+
+}
